@@ -1,0 +1,58 @@
+.min-height-300 {
+    min-height: 300px;
+}
+
+.candidate-card {
+    cursor: grab;
+    transition: all 0.2s ease;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.candidate-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.interview-column {
+    background-color: white;
+    border-radius: 12px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.interview-column-header {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.score-dots {
+    display: flex;
+    gap: 2px;
+}
+
+.score-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #4CAF50;
+}
+
+.score-dot-empty {
+    background-color: #E0E0E0;
+}
+
+@media (max-width: 768px) {
+    .candidate-card {
+        margin-bottom: 0.5rem;
+    }
+    
+    .interview-column {
+        margin-bottom: 1rem;
+    }
+} 
